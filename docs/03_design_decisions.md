@@ -35,3 +35,9 @@ half-updated. **Evidence** (`09_atomicity_test.py`): a Bundle with one valid cha
 was rejected with HTTP 400 (`HAPI-1094`), and the valid change was **not** saved
 (Condition `versionId` stayed at 1). A `batch` Bundle would have saved the valid
 entry and rejected only the invalid one.
+
+## 6. Finding the patient across systems
+Another hospital does not know the server-assigned `id`; it knows the patient's
+identifier in the source system. The first query is therefore
+`Patient?identifier=system|value` — patient identification comes before any
+clinical data (allergies, medications), as a patient-safety rule.
