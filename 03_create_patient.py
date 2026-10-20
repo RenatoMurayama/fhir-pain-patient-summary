@@ -23,12 +23,12 @@ patient = {
     "address": [{"city": "Braga", "country": "PT"}],
 }
 
-response = requests.put(
-    f"{BASE_URL}/Patient/{PATIENT_ID}",
-    headers=HEADERS,
-    data=json.dumps(patient),
-    timeout=30,
-)
-
-print("HTTP status:", response.status_code)
-print(json.dumps(response.json(), indent=2))
+if __name__ == "__main__":
+    response = requests.put(
+        f"{BASE_URL}/Patient/{PATIENT_ID}",
+        headers=HEADERS,
+        data=json.dumps(patient),
+        timeout=30,
+    )
+    print("HTTP status:", response.status_code)
+    print(json.dumps(response.json(), indent=2))

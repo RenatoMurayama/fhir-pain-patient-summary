@@ -51,5 +51,6 @@ duloxetine = make_medication_statement(
     },
 )
 
-for medication in [paracetamol, duloxetine]:
-    put_resource(medication)
+if __name__ == "__main__":
+    for medication in [paracetamol, duloxetine]:
+        put_resource(medication)

@@ -48,4 +48,5 @@ allergy = {
     }],
 }
 
-put_resource(allergy)
+if __name__ == "__main__":
+    put_resource(allergy)

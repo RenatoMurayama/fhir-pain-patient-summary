@@ -41,4 +41,5 @@ condition = {
     }],
 }
 
-put_resource(condition)
+if __name__ == "__main__":
+    put_resource(condition)

@@ -36,5 +36,6 @@ observations = [
     make_pain_observation("fpps-ana-pain-2026-10-10", 8, "2026-10-10", "Acute flare while travelling in Spain"),
 ]
 
-for observation in observations:
-    put_resource(observation)
+if __name__ == "__main__":
+    for observation in observations:
+        put_resource(observation)
