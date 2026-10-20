@@ -8,10 +8,10 @@
   },
   "identifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:64237636-5ef2-4452-85f7-8caf477807a1"
+    "value": "urn:uuid:1032bda6-af0f-4456-a691-2128cc3b4894"
   },
   "type": "document",
-  "timestamp": "2026-10-20T20:29:01+00:00",
+  "timestamp": "2026-10-20T21:05:43+00:00",
   "entry": [
     {
       "fullUrl": "https://hapi.fhir.org/baseR4/Composition/fpps-ana-ips-composition",
@@ -31,7 +31,7 @@
         "subject": {
           "reference": "Patient/fpps-ana-ferreira"
         },
-        "date": "2026-10-20T20:29:01+00:00",
+        "date": "2026-10-20T21:05:43+00:00",
         "author": [
           {
             "reference": "Practitioner/fpps-dr-joana-costa"
@@ -105,7 +105,11 @@
               }
             ]
           }
-        ]
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>International Patient Summary for Ana Ferreira</p></div>"
+        }
       }
     },
     {
@@ -134,7 +138,11 @@
             "city": "Braga",
             "country": "PT"
           }
-        ]
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Ana Ferreira, female, born 1981-04-12, Braga (PT)</p></div>"
+        }
       }
     },
     {
@@ -152,7 +160,11 @@
               "Dr."
             ]
           }
-        ]
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Dr. Joana Costa, family physician</p></div>"
+        }
       }
     },
     {
@@ -204,7 +216,11 @@
           {
             "text": "Pain usually localised to the lumbar region, no radiation to the lower limbs and no neurological deficits in previous assessments. Red flags excluded: lumbar MRI (2021) showed no fracture, tumour or inflammatory disease. Paracetamol provides partial relief; exercise therapy/physiotherapy has helped."
           }
-        ]
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Chronic low back pain - active, since 2020</p></div>"
+        }
       }
     },
     {
@@ -270,7 +286,11 @@
             ],
             "severity": "severe"
           }
-        ]
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Allergy to NSAIDs - HIGH criticality.</b> Reactions: urticaria, angioedema</p></div>"
+        }
       }
     },
     {
@@ -333,7 +353,11 @@
               }
             }
           }
-        ]
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Paracetamol: 1 g orally, up to 3 times per day if needed</p></div>"
+        }
       }
     },
     {
@@ -388,7 +412,11 @@
               }
             ]
           }
-        ]
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Duloxetine: 60 mg orally, once daily</p></div>"
+        }
       }
     }
   ]

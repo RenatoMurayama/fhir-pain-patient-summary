@@ -67,6 +67,17 @@ composition = {
     ],
 }
 
+# Resource-level narrative (fixes dom-6 best-practice warnings)
+composition["text"] = narrative("<p>International Patient Summary for Ana Ferreira</p>")
+patient["text"] = narrative("<p>Ana Ferreira, female, born 1981-04-12, Braga (PT)</p>")
+practitioner["text"] = narrative("<p>Dr. Joana Costa, family physician</p>")
+condition["text"] = narrative("<p>Chronic low back pain - active, since 2020</p>")
+allergy["text"] = narrative(
+    "<p><b>Allergy to NSAIDs - HIGH criticality.</b> Reactions: urticaria, angioedema</p>"
+)
+for med in [paracetamol, duloxetine]:
+    med["text"] = narrative(f"<p>{med['medicationCodeableConcept']['text']}: {med['dosage'][0]['text']}</p>")
+
 resources = [composition, patient, practitioner, condition, allergy, paracetamol, duloxetine]
 
 bundle = {
